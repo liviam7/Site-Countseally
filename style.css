@@ -710,6 +710,9 @@ footer {
     padding-bottom: 40px;
     align-items: flex-start;
   }
+  .logo-img {
+  height: 24px;
+}
   .hero-content { flex: none; max-width: 100%; width: 100%; }
   .hero h1 { font-size: 30px; }
   .hero-visual {
