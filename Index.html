@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countseally — Contabilidade & Seguros</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     NAV
+═══════════════════════════════════════════ -->
+<nav id="nav">
+  <div class="logo">
+  <img src="logo.svg" alt="ContaSeguro" class="logo-img">
+  </div>
+  <ul class="nav-links">
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#como">Como Funciona</a></li>
+    <li><a href="#depoimentos">Clientes</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <button class="nav-cta">Falar com Especialista</button>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════
+     HERO — Texto à esquerda + card flutuante à direita
+     (Estilo inspo: hero com pessoa + card de dados)
+═══════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-bg-circles"></div>
+  <div class="hero-inner">
+
+    <div class="hero-content">
+      <div class="hero-badge"><div class="badge-dot"></div> Referência em Contabilidade & Seguros</div>
+      <h1>Cuidamos das suas<br>finanças, enquanto você<br><em>cuida do seu negócio.</em></h1>
+      <p>Uma rede completa de contabilidade e seguros para proteger e impulsionar sua empresa. Tecnologia, agilidade e especialistas dedicados ao seu sucesso.</p>
+      <div class="hero-btns">
+        <button class="btn-white">Começar Agora</button>
+        <button class="btn-outline">Conhecer Serviços ↓</button>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-visual-wrap">
+
+        <div class="hero-glow"></div>
+
+        <!-- Cards flutuantes IRPJ — ficam acima da foto -->
+        <div class="hero-irpj-stack">
+          <div class="hero-float-card hero-irpj-1">
+            <div class="float-icon" style="background:#DCFCE7">✅</div>
+            <div>
+              <div class="float-label">Impostos em dia</div>
+              <div class="float-num">DAS de Abril — Pago</div>
+            </div>
+          </div>
+          <div class="hero-float-card hero-irpj-2">
+            <div class="float-icon" style="background:#DCFCE7">📁</div>
+            <div>
+              <div class="float-label">Documento organizado</div>
+              <div class="float-num">Notas fiscais conciliadas</div>
+            </div>
+          </div>
+          <div class="hero-float-card hero-irpj-3">
+            <div class="float-icon" style="background:#DCFCE7">📈</div>
+            <div>
+              <div class="float-label">Atualização financeira</div>
+              <div class="float-num">Fluxo de caixa atualizado</div>
+            </div>
+          </div>
+          <div class="hero-float-card hero-irpj-4">
+            <div class="float-icon" style="background:#DCFCE7">🔒</div>
+            <div>
+              <div class="float-label">Cobertura ativa</div>
+              <div class="float-num">Patrimônio assegurado</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Foto da pessoa — centralizada e maior -->
+        <img src="hero-pessoa.png" alt="Especialista Countseally" class="hero-person-img">
+
+        <!-- Painel financeiro — canto inferior direito -->
+        <div class="hero-card-main">
+          <div class="hero-card-header">
+            <span class="hero-card-title">Painel Financeiro</span>
+            <span class="hero-card-badge">Atualizado hoje</span>
+          </div>
+          <div class="hero-stat-grid">
+            <div class="hero-stat">
+              <div class="hero-stat-num">R$2,4M</div>
+              <div class="hero-stat-label">Patrimônio gerenciado</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-num">98%</div>
+              <div class="hero-stat-label">Satisfação dos clientes</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-num">847</div>
+              <div class="hero-stat-label">Empresas atendidas</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-num">15 anos</div>
+              <div class="hero-stat-label">De experiência</div>
+            </div>
+          </div>
+          <div>
+            <div class="hero-progress-label"><span>Compliance fiscal</span><span>92%</span></div>
+            <div class="hero-progress-bar"><div class="hero-progress-fill" style="--w:92%"></div></div>
+          </div>
+          <div style="margin-top:12px">
+            <div class="hero-progress-label"><span>Cobertura de seguros</span><span>100%</span></div>
+            <div class="hero-progress-bar"><div class="hero-progress-fill" style="--w:100%"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     STATS — Barra de números de impacto
+═══════════════════════════════════════════ -->
+<div class="stats">
+  <div class="stats-inner">
+    <div class="stat-item reveal"><div class="stat-num">+<span>2.500</span></div><div class="stat-label">Empresas atendidas em todo o Brasil</div></div>
+    <div class="stat-item reveal"><div class="stat-num"><span>15</span> anos</div><div class="stat-label">De experiência no mercado</div></div>
+    <div class="stat-item reveal"><div class="stat-num"><span>98</span>%</div><div class="stat-label">Índice de satisfação dos clientes</div></div>
+    <div class="stat-item reveal"><div class="stat-num">R$<span>180M</span></div><div class="stat-label">Em patrimônio gerenciado</div></div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     SOBRE — Texto + imagem lado a lado
+     (Estilo inspo: seção "Somos uma plataforma que...")
+═══════════════════════════════════════════ -->
+<section class="sobre" id="sobre">
+  <div class="section-inner">
+    <div class="sobre-inner">
+      <div class="sobre-img-wrap reveal">
+        <!-- ╔═════════════════════════════════════════╗
+             ║  IMG SOBRE: Foto da equipe / escritório  ║
+             ║  ou foto do(s) fundador(es)              ║
+             ║  Tamanho ideal: 560x480px                ║
+             ║                                          ║
+             ║  Como usar:                              ║
+             ║  <img src="sobre-equipe.jpg"             ║
+             ║       alt="Equipe ContaSeguro"           ║
+             ║       class="sobre-img">                 ║
+             ╚═════════════════════════════════════════╝ -->
+        <div class="img-placeholder sobre-img-placeholder">
+          <img src="sobre-equipe.jpg"             ║
+             ║       alt="Equipe ContaSeguro"           ║
+             ║       class="sobre-img"> 
+          <!-- <span>📷 Foto da equipe ou escritório<br><small>560×480px</small></span> -->
+        </div>
+        <!-- Badge flutuante sobre a imagem (igual à inspo) -->
+        <div class="sobre-float-badge">
+          <div class="float-icon" style="background:#DBEAFE">🏆</div>
+          <div>
+            <div class="float-num">Top 1%</div>
+            <div class="float-label">Escritórios de contabilidade no Brasil</div>
+          </div>
+        </div>
+      </div>
+      <div class="sobre-content reveal">
+        <span class="section-tag">Quem somos</span>
+        <h2 class="section-title">Somos uma rede que <em>conecta empresas</em> à segurança financeira</h2>
+        <p class="section-sub">A ContaSeguro nasceu para resolver toda a dificuldade que o empresário sente ao precisar de uma contabilidade confiável e de seguros que realmente protejam.</p>
+        <ul class="sobre-lista">
+          <li>
+            <div class="sobre-lista-icon">✕</div>
+            <span>Pagar multas por atraso em obrigações fiscais</span>
+          </li>
+          <li>
+            <div class="sobre-lista-icon sobre-lista-icon--no">✕</div>
+            <span>Ficar sem resposta quando mais precisa do contador</span>
+          </li>
+          <li>
+            <div class="sobre-lista-icon sobre-lista-icon--no">✕</div>
+            <span>Contratar seguros que não cobrem o que você precisa</span>
+          </li>
+        </ul>
+        <p style="color:var(--texto-sec);font-size:15px;line-height:1.7;margin-top:8px">Com a ContaSeguro, você nunca mais passa por isso.</p>
+        <button class="btn-azul" style="margin-top:28px">Conheça nossa história →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     SERVIÇOS — Grid de 6 cards
+═══════════════════════════════════════════ -->
+<section class="servicos" id="servicos">
+  <div class="section-inner">
+    <div class="servicos-header reveal">
+      <span class="section-tag">O que fazemos</span>
+      <h2 class="section-title">Soluções completas para<br><em>proteger e crescer</em></h2>
+      <p class="section-sub">Da contabilidade ao seguro, cuidamos de tudo para que você foque no que realmente importa.</p>
+    </div>
+    <div class="servicos-grid">
+      <div class="servico-card reveal"><div class="servico-icon">📊</div><div class="servico-title">Contabilidade Empresarial</div><div class="servico-desc">Escrituração contábil completa, balanços, DRE e relatórios gerenciais precisos para tomada de decisão.</div><a href="#" class="servico-link">Saiba mais →</a></div>
+      <div class="servico-card reveal"><div class="servico-icon">🧾</div><div class="servico-title">Gestão Fiscal e Tributária</div><div class="servico-desc">Planejamento tributário, apuração de impostos e compliance para sua empresa pagar menos de forma legal.</div><a href="#" class="servico-link">Saiba mais →</a></div>
+      <div class="servico-card reveal"><div class="servico-icon">👥</div><div class="servico-title">Departamento Pessoal</div><div class="servico-desc">Folha de pagamento, admissões, demissões, FGTS e toda a gestão de RH de forma precisa e no prazo.</div><a href="#" class="servico-link">Saiba mais →</a></div>
+      <div class="servico-card reveal"><div class="servico-icon">🛡️</div><div class="servico-title">Seguros Empresariais</div><div class="servico-desc">Proteção completa para seu patrimônio, responsabilidade civil, frota e muito mais com as melhores seguradoras.</div><a href="#" class="servico-link">Saiba mais →</a></div>
+      <div class="servico-card reveal"><div class="servico-icon">🏥</div><div class="servico-title">Seguros de Vida e Saúde</div><div class="servico-desc">Planos personalizados de saúde e vida para você, sua família e colaboradores com as melhores condições.</div><a href="#" class="servico-link">Saiba mais →</a></div>
+      <div class="servico-card reveal"><div class="servico-icon">📈</div><div class="servico-title">Consultoria Financeira</div><div class="servico-desc">Análise de fluxo de caixa, viabilidade de investimentos e estratégias para escalar o seu negócio.</div><a href="#" class="servico-link">Saiba mais →</a></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     BANNER CTA INTERMEDIÁRIO
+     (Estilo inspo: faixa colorida com foto de pessoa + texto)
+═══════════════════════════════════════════ -->
+<div class="banner-cta">
+  <div class="banner-cta-inner">
+    <div class="banner-cta-img-wrap">
+      <!-- ╔═════════════════════════════════════════════╗
+           ║  IMG BANNER: Foto de profissional/cliente    ║
+           ║  feliz, sorrindo — PNG sem fundo             ║
+           ║  Tamanho ideal: 340x400px                    ║
+           ║                                              ║
+           ║  Como usar:                                  ║
+           ║  <img src="banner-pessoa.png"                ║
+           ║       alt="Cliente satisfeito"               ║
+           ║       class="banner-pessoa-img">             ║
+           ╚═════════════════════════════════════════════╝ -->
+      <div class="img-placeholder banner-img-placeholder">
+        <img src="banner-pessoa.png"                ║
+           ║       alt="Cliente satisfeito"               ║
+           ║       class="banner-pessoa-img">
+      </div>
+    </div>
+    <div class="banner-cta-content">
+      <h2>Contrate especialistas de forma <span>simples e eficiente</span></h2>
+      <p>Sua empresa merece o melhor em contabilidade e seguros — sem burocracia, sem surpresas.</p>
+      <button class="btn-white">Quero um especialista →</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     COMO FUNCIONA — Steps interativos
+═══════════════════════════════════════════ -->
+<section class="como" id="como">
+  <div class="section-inner">
+    <div class="como-inner">
+      <div class="como-content">
+        <span class="section-tag reveal">Como funciona</span>
+        <h2 class="section-title reveal">Simples, rápido e<br><em>sem complicação</em></h2>
+        <p class="section-sub reveal">Nosso processo foi desenhado para ser ágil e transparente em todas as etapas.</p>
+        <div class="como-steps" id="steps">
+          <div class="step active" data-step="0">
+            <div class="step-num">01</div>
+            <div><div class="step-title">Diagnóstico gratuito</div><div class="step-desc">Analisamos a situação atual da sua empresa e identificamos oportunidades de economia e proteção.</div></div>
+          </div>
+          <div class="step" data-step="1">
+            <div class="step-num">02</div>
+            <div><div class="step-title">Proposta personalizada</div><div class="step-desc">Montamos um plano sob medida com os serviços ideais para o seu perfil e necessidades.</div></div>
+          </div>
+          <div class="step" data-step="2">
+            <div class="step-num">03</div>
+            <div><div class="step-title">Onboarding ágil</div><div class="step-desc">Migramos tudo de forma organizada e sem interrupção das suas operações.</div></div>
+          </div>
+          <div class="step" data-step="3">
+            <div class="step-num">04</div>
+            <div><div class="step-title">Gestão contínua</div><div class="step-desc">Acompanhamento mensal com relatórios claros e um especialista dedicado sempre disponível.</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="como-visual reveal">
+        <div class="como-image-card" id="step-card">
+          <div class="como-step-icon" id="step-icon">🔍</div>
+          <div class="como-step-title" id="step-title">Diagnóstico Gratuito</div>
+          <div class="como-step-desc" id="step-desc">Analisamos sua empresa sem nenhum custo e entregamos um relatório completo de oportunidades de economia.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     DOIS PERFIS (estilo inspo: "Seja Agente" / "Encontre Vagas")
+     Adaptado: Empresas / Pessoas Físicas
+═══════════════════════════════════════════ -->
+<section class="perfis">
+  <div class="section-inner">
+    <div class="perfis-header reveal">
+      <span class="section-tag">Conecte-se conosco do seu jeito</span>
+      <h2 class="section-title">Escolha como <em>podemos te ajudar</em></h2>
+    </div>
+    <div class="perfis-grid">
+      <div class="perfil-card reveal">
+        <!-- ╔══════════════════════════════════════════════╗
+             ║  IMG PERFIL 1: Empresário / dono de empresa  ║
+             ║  PNG com fundo ou foto editorial             ║
+             ║  Tamanho ideal: 260x300px                    ║
+             ║                                              ║
+             ║  <img src="perfil-empresa.png"               ║
+             ║       alt="Para empresas"                    ║
+             ║       class="perfil-img">                    ║
+             ╚══════════════════════════════════════════════╝ -->
+        <div class="img-placeholder perfil-img-placeholder">
+          <img src="perfil-empresa.png"               ║
+             ║       alt="Para empresas"                    ║
+             ║       class="perfil-img">  
+        </div>
+        <div class="perfil-content">
+          <h3>Para Empresas</h3>
+          <p>Contabilidade completa, gestão fiscal e seguros empresariais. Tudo sob medida para o seu negócio crescer protegido.</p>
+          <a href="#" class="perfil-link">Quero para minha empresa →</a>
+        </div>
+      </div>
+      <div class="perfil-card reveal">
+        <!-- ╔══════════════════════════════════════════════╗
+             ║  IMG PERFIL 2: Pessoa física / profissional  ║
+             ║  PNG com fundo ou foto editorial             ║
+             ║  Tamanho ideal: 260x300px                    ║
+             ║                                              ║
+             ║  <img src="perfil-pessoa.png"                ║
+             ║       alt="Para pessoas físicas"             ║
+             ║       class="perfil-img">                    ║
+             ╚══════════════════════════════════════════════╝ -->
+        <div class="img-placeholder perfil-img-placeholder">
+          <img src="perfil-pessoa.png"                ║
+             ║       alt="Para pessoas físicas"             ║
+             ║       class="perfil-img">
+        </div>
+        <div class="perfil-content">
+          <h3>Para Pessoas Físicas</h3>
+          <p>Declaração de IR, planejamento patrimonial e seguros de vida e saúde. Cuide do seu futuro com quem entende.</p>
+          <a href="#" class="perfil-link">Quero para mim →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     POR QUE NÓS — Grid escuro
+═══════════════════════════════════════════ -->
+<section class="porque">
+  <div class="section-inner">
+    <div class="porque-header reveal">
+      <span class="section-tag">Por que escolher a ContaSeguro</span>
+      <h2 class="section-title">A diferença que você<br>vai sentir todo mês</h2>
+      <p class="section-sub">Combinamos tecnologia de ponta com atendimento humanizado para entregar resultados reais.</p>
+    </div>
+    <div class="porque-grid">
+      <div class="porque-item reveal"><div class="porque-icon">⚡</div><div class="porque-title">Tecnologia Exclusiva</div><div class="porque-desc">Plataforma própria para acompanhar sua contabilidade e seguros em tempo real, de qualquer lugar.</div></div>
+      <div class="porque-item reveal"><div class="porque-icon">💰</div><div class="porque-title">Economia Comprovada</div><div class="porque-desc">Nossos clientes economizam em média 32% em tributos e 25% nos custos de seguros no primeiro ano.</div></div>
+      <div class="porque-item reveal"><div class="porque-icon">🎯</div><div class="porque-title">Especialista Dedicado</div><div class="porque-desc">Você tem um contador e um corretor de seguros exclusivos, que conhecem profundamente o seu negócio.</div></div>
+      <div class="porque-item reveal"><div class="porque-icon">🔒</div><div class="porque-title">Segurança Total</div><div class="porque-desc">Seus dados protegidos com criptografia de nível bancário e backup automático 24h.</div></div>
+      <div class="porque-item reveal"><div class="porque-icon">📱</div><div class="porque-title">Acesso Móvel</div><div class="porque-desc">App disponível no iOS e Android para acompanhar balancetes, sinistros e relatórios na palma da mão.</div></div>
+      <div class="porque-item reveal"><div class="porque-icon">✅</div><div class="porque-title">Satisfação Garantida</div><div class="porque-desc">Não gostou nos primeiros 30 dias? Devolvemos todo o investimento, sem perguntas.</div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     DEPOIMENTOS — Cards com foto do cliente
+     (Estilo inspo: depoimento com foto, nome e cargo)
+═══════════════════════════════════════════ -->
+<section class="depoimentos" id="depoimentos">
+  <div class="section-inner">
+    <div class="depo-header reveal">
+      <span class="section-tag">Clientes felizes</span>
+      <h2 class="section-title">Quem já transformou<br>sua <em>gestão financeira</em></h2>
+    </div>
+
+    <!-- Depoimento em destaque (estilo inspo: foto grande + citação) -->
+    <div class="depo-destaque reveal">
+      <div class="depo-destaque-img-wrap">
+        <!-- ╔══════════════════════════════════════════════╗
+             ║  IMG DEPOIMENTO DESTAQUE: Foto do cliente    ║
+             ║  em destaque (pode ser maior, editorial)     ║
+             ║  Tamanho ideal: 300x340px                    ║
+             ║                                              ║
+             ║  <img src="depo-destaque.jpg"                ║
+             ║       alt="Michele Almeida"                  ║
+             ║       class="depo-destaque-img">             ║
+             ╚══════════════════════════════════════════════╝ -->
+        <img src="depo-destaque.png" alt="Maria Silva" class="depo-destaque-img">
+      </div>
+      <div class="depo-destaque-content">
+        <div class="aspas">"</div>
+        <p class="depo-destaque-texto">Ter minha empresa com a contabilidade 100% em dia e ainda contar com seguros que realmente funcionam também é algo muito libertador. Não dependo mais de surpresas fiscais ou de sinistros que demoram para ser resolvidos.</p>
+        <div class="depo-destaque-autor">
+          <strong>Maria Silva</strong>
+          <span>CEO — Grupo Silva Comércio</span>
+        </div>
+        <div class="depo-dots">
+          <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grid de 3 depoimentos menores -->
+    <div class="depo-grid">
+      <div class="depo-card reveal">
+        <div class="depo-stars">★★★★★</div>
+        <div class="depo-text">Desde que migrei para a ContaSeguro, economizei mais de R$40 mil em impostos e não me preocupo mais com prazo de nada. O suporte é incrível.</div>
+        <div class="depo-author">
+          <!-- ╔═══════════════════════════════════════╗
+               ║  IMG AVATAR: Foto pequena do cliente   ║
+               ║  Circular, 44x44px                     ║
+               ║  <img src="cliente-rm.jpg"              ║
+               ║       alt="Ricardo Moraes"              ║
+               ║       class="depo-avatar-img">          ║
+               ╚═══════════════════════════════════════╝ -->
+          <div class="depo-avatar">RM</div>
+          <div><div class="depo-name">Ricardo Moraes</div><div class="depo-role">CEO — Construtora Moraes</div></div>
+        </div>
+      </div>
+      <div class="depo-card reveal">
+        <div class="depo-stars">★★★★★</div>
+        <div class="depo-text">O seguro empresarial que eles indicaram salvou minha empresa quando tive um sinistro. Atendimento rápido e eficiente. Não troco por nada.</div>
+        <div class="depo-author">
+          <!-- IMG AVATAR: foto cliente Patricia, 44x44px circular -->
+          <div class="depo-avatar">PA</div>
+          <div><div class="depo-name">Patricia Alves</div><div class="depo-role">Sócia — Clínica Viver Bem</div></div>
+        </div>
+      </div>
+      <div class="depo-card reveal">
+        <div class="depo-stars">★★★★★</div>
+        <div class="depo-text">Minha contabilidade sempre foi uma dor de cabeça. Com a ContaSeguro virou rotina: relatórios claros, tudo em dia e ainda tenho um app pra acompanhar tudo.</div>
+        <div class="depo-author">
+          <!-- IMG AVATAR: foto cliente Felipe, 44x44px circular -->
+          <div class="depo-avatar">FS</div>
+          <div><div class="depo-name">Felipe Santos</div><div class="depo-role">Fundador — TechLab Solutions</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     PARCEIROS / NA MÍDIA
+     (Estilo inspo: logos de veículos de imprensa)
+═══════════════════════════════════════════ -->
+<!--<div class="parceiros">
+  <div class="parceiros-inner">
+    <div class="parceiros-label reveal">Parceiros e seguradoras de confiança</div>
+    <div class="parceiros-logos">
+           ╔══════════════════════════════════════════════════════════════╗
+           ║  IMG LOGOS PARCEIROS: Logos das seguradoras/parceiros        ║
+           ║  Formato ideal: SVG ou PNG com fundo transparente            ║
+           ║  Altura: ~36px, largura variável                             ║
+           ║                                                              ║
+           ║  Exemplo de uso:                                             ║
+           ║  <img src="logo-porto.svg" alt="Porto Seguro" class="logo-parceiro"> ║
+           ║  <img src="logo-bradesco.svg" alt="Bradesco" class="logo-parceiro">  ║
+           ╚══════════════════════════════════════════════════════════════╝ 
+      <div class="parceiro-logo reveal">PORTO SEGURO</div>
+      <div class="parceiro-logo reveal">BRADESCO</div>
+      <div class="parceiro-logo reveal">SULAMERICA</div>
+      <div class="parceiro-logo reveal">ALLIANZ</div>
+      <div class="parceiro-logo reveal">MAPFRE</div>
+    </div>
+  </div>
+</div> -->
+
+
+<!-- ═══════════════════════════════════════════
+     FAQ
+═══════════════════════════════════════════ -->
+<section class="faq" id="faq">
+  <div class="section-inner">
+    <div class="faq-inner">
+      <div>
+        <span class="section-tag reveal">Dúvidas frequentes</span>
+        <h2 class="section-title reveal">Ficou com<br>alguma <em>dúvida?</em></h2>
+        <p class="section-sub reveal" style="margin-top:16px">Confira as respostas para as perguntas mais comuns. Não encontrou? Fale com a gente.</p>
+        <button class="btn-azul" style="margin-top:32px">Falar com Especialista</button>
+      </div>
+      <div class="faq-list reveal" id="faq-list">
+        <div class="faq-item open">
+          <button class="faq-btn"><span>Quais tipos de empresa vocês atendem?</span><div class="faq-icon">+</div></button>
+          <div class="faq-answer"><p>Atendemos MEI, ME, EPP, Ltda e S/A de todos os setores. Nossos especialistas são treinados para cada regime tributário — Simples Nacional, Lucro Presumido e Lucro Real.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn"><span>Como funciona a migração da contabilidade atual?</span><div class="faq-icon">+</div></button>
+          <div class="faq-answer"><p>Nossa equipe cuida de todo o processo de migração sem custo adicional. Solicitamos os documentos necessários e realizamos a transição de forma organizada, sem interromper suas operações.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn"><span>Quanto custa contratar a ContaSeguro?</span><div class="faq-icon">+</div></button>
+          <div class="faq-answer"><p>Os valores variam de acordo com o porte da empresa e os serviços contratados. Oferecemos um diagnóstico gratuito e apresentamos uma proposta personalizada sem compromisso.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn"><span>Vocês trabalham com seguros de qual seguradora?</span><div class="faq-icon">+</div></button>
+          <div class="faq-answer"><p>Somos corretores independentes e trabalhamos com as principais seguradoras do mercado — Porto Seguro, Bradesco, SulAmérica, Allianz e outras.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn"><span>Existe contrato de fidelidade?</span><div class="faq-icon">+</div></button>
+          <div class="faq-answer"><p>Não exigimos fidelidade. Acreditamos que você fica porque gosta, não porque é obrigado. Temos aviso prévio de 30 dias e garantia de satisfação no primeiro mês.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     CTA FINAL
+═══════════════════════════════════════════ -->
+<section class="cta" id="contato">
+  <div class="cta-inner">
+    <h2 class="reveal">Pronto para transformar<br>a gestão da <em>sua empresa?</em></h2>
+    <p class="reveal">Fale com um especialista hoje e receba um diagnóstico gratuito. Sem compromisso.</p>
+    <div class="cta-btns reveal">
+      <button class="btn-white">Diagnóstico Gratuito</button>
+      <button class="btn-outline">Ver todos os serviços</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <!-- IMG LOGO FOOTER: versão clara/branca do logo para fundo escuro
+             <img src="logo-branco.svg" alt="ContaSeguro" class="footer-logo-img"> -->
+        <div class="logo-footer">
+        <img src="logo-3.svg" alt="ContaSeguro" class="logo-footer-img">
+        </div>
+        <p>Contabilidade, seguros e consultoria financeira para empresas que querem crescer com segurança.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Nossa equipe</a></li>
+          <li><a href="#">Carreiras</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#">Contabilidade</a></li>
+          <li><a href="#">Fiscal e Tributário</a></li>
+          <li><a href="#">Departamento Pessoal</a></li>
+          <li><a href="#">Seguros</a></li>
+          <li><a href="#">Consultoria</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Suporte</h4>
+        <ul>
+          <li><a href="#">Central de Ajuda</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 ContaSeguro. Todos os direitos reservados. CRC/SP 000000/O.</span>
+      <div class="footer-socials">
+        <a class="social-btn" href="#">in</a>
+        <a class="social-btn" href="#">ig</a>
+        <a class="social-btn" href="#">fb</a>
+        <a class="social-btn" href="#">yt</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
